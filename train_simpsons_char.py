@@ -1,7 +1,7 @@
 # train a miniature character-level shakespeare model
 # good for debugging and playing on macbooks and such
 
-out_dir = 'out-simpsons-char'
+out_dir = 'out-airquality-char'
 eval_interval = 250 # keep frequent because we'll overfit
 eval_iters = 200
 log_interval = 10 # don't print too too often
@@ -13,7 +13,7 @@ wandb_log = False # override via command line if you like
 wandb_project = 'simpsons-char'
 wandb_run_name = 'nano-gpt'
 
-dataset = 'simpsons'
+dataset = 'Plant_1_Weather_Sensor_Data'
 gradient_accumulation_steps = 1
 batch_size = 64
 block_size = 256 # context of up to 256 previous characters
